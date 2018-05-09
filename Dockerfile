@@ -19,4 +19,7 @@ RUN echo "h2o ALL=(nobody) NOPASSWD: ALL" >> /etc/sudoers
 
 COPY h2o.conf /etc/
 
+WORKDIR /
+CMD [ "h2o" ]
+
 EXPOSE 8080
